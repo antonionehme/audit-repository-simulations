@@ -1,0 +1,16 @@
+Client should be run with these parameters:
+1. java -jar client/target/client-0.0.1-SNAPSHOT.jar --address --node "http://localhost:8080" --name "Antonio Nehme" --publickey key.pub
+	Client here registers with a name and a public key. A hash would be produced as an identifier for the user. 
+	Hash is byte[] hashableData = ArrayUtils.addAll(name.getBytes(), publicKey);
+	
+2. java -jar client/target/client-0.0.1-SNAPSHOT.jar --transaction --node "http://localhost:8080" --sender "HEWtNSfUAMKEitKc5MBThupdOTj98oV/VaLG9LbR5Ms=" --message "Hello-World" --privatekey key.priv
+	Every reported audit is sent to the audit server with the signature of the sender, regardless of whether this signature gets exposed on the server or not.
+	
+	
+http://localhost:8080/transaction is the interface of the audit server
+http://localhost:8080/address is the registry of participants.
+
+I added the digest to the transaction.
+
+=====================================================
+Now, we need to have and Jblockchain client to the same project so that we can post JWT messages to the audit server.

@@ -1,0 +1,13 @@
+/.idea
+/nimbus-jose-jwt.iml
+nimbus-jose-jwt-*.jar
+TEST.*
+*.class
+*~
+.classpath
+.pmd
+.project
+target
+*asc
+.settings
+release.properties

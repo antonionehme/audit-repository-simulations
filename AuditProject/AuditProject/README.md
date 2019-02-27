@@ -32,4 +32,4 @@ Each participant should have certificate, and uses its public key to register wi
 ## Audit Trail Recursive Tracing
 [Here](https://github.com/antonionehme/repo/blob/master/Audit-Trails-Decoding.pptx) is an explanation for the structure of our audit trail, and on how to recursively decode it and reproduce the exchanged message with a representation of the topology.
 
-[![Audit Trails](https://github.com/antonionehme/repo/blob/master/ComplexWorkflow.jpg)](https://github.com/antonionehme/repo/blob/master/Audit-Trails-Decoding.pptx)
+[![Audit Trails](https://github.com/antonionehme/repo/blob/master/ComplexWorkflow.jpg)]()

@@ -182,7 +182,7 @@ public class WorkflowParticipant {//Added the extension hoping to get the servic
     	  boolean verif=EncryptedAuditRecordverification(message,"client2");//Here's where the problem is. When this is commented, the message gets received.
               msgPool.add(message);
 
-         double delay=LogNormalbasedDelayGeneration.simulate_delay_time(constant, mu, sigma);
+         //double delay=LogNormalbasedDelayGeneration.simulate_delay_time(constant, mu, sigma);
         		 
         long endTime_recieve = System.currentTimeMillis(); long duration_recieve = (endTime_recieve - startTime_recieve);//+(long)delay;
         //long duration_recieve_with_delay=(endTime_recieve - startTime_recieve)+(long)delay;

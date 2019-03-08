@@ -71,7 +71,7 @@ import audit.client.loadsimulation.LogNormalbasedDelayGeneration;
 
 @Service
 @SpringBootApplication //Added this for the web service.
-public class WorkflowGenericParticipant_script {//Added the extension hoping to get the service variables
+public class WorkflowGenericParticipant_script {// Delay is sumulated at the level of the AUdit server.
 	 private static KeyStore clientKeyStore;
 	 static double mu=1; static double sigma=1;
 	  static private final String clientpassphrase = "clientpw";
@@ -93,7 +93,7 @@ public class WorkflowGenericParticipant_script {//Added the extension hoping to 
 	  private static String recipientPort= "";
 	  static String file_recieve = "Output.csv";
       static double constant = 1;
-      static double [] mu_arr=new double [] {1,3,5,7,9}; static double [] sigma_arr=new double [] {1,2,3,4,5,7,9};
+      static double [] mu_arr=new double [] {1,2,3,4,5}; static double [] sigma_arr=new double [] {1,2,3,4};
       static int i; static int j; static int iteration=0;
       static double delay;
 	  
@@ -292,7 +292,7 @@ public class WorkflowGenericParticipant_script {//Added the extension hoping to 
           	
               sendMessageToParticipant("http://localhost:"+recipientPort+"/participant?publish=true", msg, "key.priv", "HEWtNSfUAMKEitKc5MBThupdOTj98oV/VaLG9LbR5Ms=", "client2", "server");
               
-              delay=delay+LogNormalbasedDelayGeneration.simulate_delay_time(constant, mu_arr[i], sigma_arr[j]);
+              //delay=delay+LogNormalbasedDelayGeneration.simulate_delay_time(constant, mu_arr[i], sigma_arr[j]);
        		
               
              /* long endTime_send = System.currentTimeMillis();long duration_send = (endTime_send - startTime_send);
@@ -308,12 +308,12 @@ public class WorkflowGenericParticipant_script {//Added the extension hoping to 
               //fileWriter_combo.close();
               clean();
         } else {
-        	 double delay=LogNormalbasedDelayGeneration.simulate_delay_time(constant, mu_arr[i], sigma_arr[j]);
+        	// double delay=LogNormalbasedDelayGeneration.simulate_delay_time(constant, mu_arr[i], sigma_arr[j]);
      		 
              long endTime_recieve = System.currentTimeMillis(); long duration_recieve = (endTime_recieve - startTime_recieve);//+(long)delay;
-             long duration_recieve_with_delay=(endTime_recieve - startTime_recieve)+(long)delay;
+             long duration_recieve_with_delay=(endTime_recieve - startTime_recieve);//+(long)delay;
              fileWriter_recieve.append("iteration "+ iteration+","+duration_recieve+","+duration_recieve_with_delay+"\n");
-             delay=0;
+            // delay=0;
         	iteration++;
         	if(iteration%50==0) {j++;
         	String FILE_HEADER = "Constrant "+constant+ " Mu "+ mu_arr[i]+ " sigma "+ sigma_arr[j]+", ResponseTime with Delay of C*e^(mu+Z*sigma) of the simulation"+"\n";

@@ -57,6 +57,10 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
+/*
+ * Developed as a proof of concept for Decentralised and Collaborative Auditing of workflows. 
+ * Antonio Nehme- Birmingham City University
+ * */
 
 public class JWTMsg {
 //I think we can use JWE for inter-party communications, and Deterministic RSA for the audit trail.

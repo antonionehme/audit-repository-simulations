@@ -3,7 +3,10 @@ import java.io.FileWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-
+/*
+ * Developed as a proof of concept for Decentralised and Collaborative Auditing of workflows. 
+ * Antonio Nehme- Birmingham City University
+ * */
 public class CSV_init {
 public static void main (String args[]) throws IOException {
 	String file_send = "data_send.csv";String file_recieve = "delay3_5.csv";String file_combo = "data_combo.csv";

@@ -22,15 +22,11 @@ import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 
 
-/**
- * Simple class to help building REST calls for jBlockchain.
- * Just run it in command line for instructions on how to use it.
- *
- * Functions include:
- * - Generate Private/Public-Key
- * - Publish a new Address
- * - Publish a new Transaction
- */
+/*
+ * Developed as a proof of concept for Decentralised and Collaborative Auditing of workflows. 
+ * Antonio Nehme- Birmingham City University
+ * */
+
 public class JWTClient {
 	private static KeyStore clientKeyStore;
 	  static private final String clientpassphrase = "clientpw";

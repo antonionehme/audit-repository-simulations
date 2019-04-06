@@ -20,6 +20,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Set;
 
+/*
+ * Developed as a proof of concept for Decentralised and Collaborative Auditing of workflows. 
+ * Antonio Nehme- Birmingham City University
+ * */
+
 @RestController()
 @RequestMapping("node")
 public class MsgControllerGeneric2Ports {

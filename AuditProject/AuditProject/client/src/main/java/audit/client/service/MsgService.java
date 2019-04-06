@@ -17,6 +17,11 @@ import audit.client.*;
 import java.util.*;
 
 
+/*
+ * Developed as a proof of concept for Decentralised and Collaborative Auditing of workflows. 
+ * Antonio Nehme- Birmingham City University
+ * */
+
 @Service
 public class MsgService{
 

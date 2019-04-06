@@ -13,6 +13,11 @@ import audit.common.domain.Transaction;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Set;
 
+/*
+ * Developed as a proof of concept for Decentralised and Collaborative Auditing of workflows. 
+ * Antonio Nehme- Birmingham City University
+ * */
+
 @RestController()
 @RequestMapping("interface")
 public class MsgController {

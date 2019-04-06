@@ -3,7 +3,10 @@ package audit.client;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-
+/*
+ * Developed as a proof of concept for Decentralised and Collaborative Auditing of workflows. 
+ * Antonio Nehme- Birmingham City University
+ * */
 public class CSV_add {
 public static void main (String args[]) throws IOException {
 	String file = "data.csv";

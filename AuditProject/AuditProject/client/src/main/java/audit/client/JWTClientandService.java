@@ -48,16 +48,10 @@ import java.util.Scanner;
 import java.util.Set;
 
 
-/**
- * Simple class to help building REST calls for jBlockchain.
- * Just run it in command line for instructions on how to use it.
- *
- * Functions include:
- * - Generate Private/Public-Key
- * - Publish a new Address
- * - Publish a new Transaction
- */
-
+/*
+ * Developed as a proof of concept for Decentralised and Collaborative Auditing of workflows. 
+ * Antonio Nehme- Birmingham City University
+ * */
 @SpringBootApplication //Added this for the web service.
 public class JWTClientandService extends MsgService{//Added the extension hoping to get the service variables
 	 private static KeyStore clientKeyStore;

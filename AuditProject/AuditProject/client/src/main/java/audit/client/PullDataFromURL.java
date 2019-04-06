@@ -8,6 +8,12 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.json.JSONObject;
+
+/*
+ * Developed as a proof of concept for Decentralised and Collaborative Auditing of workflows. 
+ * Antonio Nehme- Birmingham City University
+ * */
+
 public class PullDataFromURL {
 	static List<String> audit_recs = new ArrayList<>();
 	public static void main(String[] args) {
